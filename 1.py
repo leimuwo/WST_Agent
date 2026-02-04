@@ -2,7 +2,7 @@
 from test import DifyChatClient
 import json
 
-client = DifyChatClient('http://localhost', 'app-7aLKXUWWmAejBUIRBo9hLFXZ')
+client = DifyChatClient('http://localhost', 'app-fCE9IH9pdKqDzOZnMcv8HS0x')
 
 result = client.send_chat_message(
     query='你好，请解释一下这段代码：print("Hello World")',
