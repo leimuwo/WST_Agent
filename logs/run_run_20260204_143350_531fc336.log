@@ -1,0 +1,9 @@
+2026-02-04 14:33:50,827 | INFO | __main__ | Run directory: data\runs\run_20260204_143350_531fc336
+2026-02-04 14:34:02,674 | INFO | httpx | HTTP Request: POST https://api-inference.modelscope.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 14:34:02,678 | INFO | src.workflow.summarizer | Workflow summarization complete.
+2026-02-04 14:34:02,681 | INFO | src.synthesis.runner | Starting case 1
+2026-02-04 14:34:05,397 | INFO | httpx | HTTP Request: POST https://api-inference.modelscope.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 14:34:07,189 | INFO | httpx | HTTP Request: POST https://api-inference.modelscope.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 14:34:07,206 | INFO | src.platform.dify | Calling Dify app via REST.
+2026-02-04 14:34:11,332 | INFO | httpx | HTTP Request: POST https://api-inference.modelscope.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 14:34:11,334 | INFO | __main__ | Completed 1 cases. Outputs saved in data\runs\run_20260204_143350_531fc336

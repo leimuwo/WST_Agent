@@ -1,0 +1,47 @@
+{
+  "run_id": "run_20260204_154824_da981f68",
+  "framework_config": {
+    "run": {
+      "n_cases": 1,
+      "max_iterations": 1,
+      "history_y": 3,
+      "history_x": 2,
+      "stop_on_success": true,
+      "output_dir": "data/runs",
+      "logs_dir": "logs"
+    },
+    "workflow": {
+      "config_path": "config/代码解释器.yml",
+      "platform": "dify"
+    },
+    "llm": {
+      "base_url": "https://api-inference.modelscope.cn/v1",
+      "api_key": "ms-ae6919c4-7dac-421a-915f-12aeab2e37e6",
+      "default_model": "Qwen/Qwen3-8B",
+      "temperature": 0.4,
+      "max_tokens": 1200,
+      "models": {
+        "summarize": "Qwen/Qwen3-8B",
+        "idea_generation": "Qwen/Qwen3-8B",
+        "idea_refine": "Qwen/Qwen3-8B",
+        "input_rules": "Qwen/Qwen3-8B",
+        "evaluation": "Qwen/Qwen3-8B"
+      },
+      "extra_body": {
+        "enable_thinking": false
+      }
+    },
+    "platforms": {
+      "dify": {
+        "base_url": "http://localhost/v1",
+        "api_key": "app-fCE9IH9pdKqDzOZnMcv8HS0x",
+        "user": "test-user",
+        "response_mode": "blocking",
+        "timeout_seconds": 60,
+        "query_field": "query",
+        "route": "chat-messages"
+      }
+    }
+  },
+  "workflow_source_path": "config/代码解释器.yml"
+}

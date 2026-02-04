@@ -1,0 +1,4 @@
+# Core runtime deps
+requests>=2.31.0
+PyYAML>=6.0.1
+openai

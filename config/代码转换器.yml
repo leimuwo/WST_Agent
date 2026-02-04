@@ -1,0 +1,118 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: completion
+  name: 代码转换器
+  use_icon_as_answer_icon: false
+dependencies:
+- current_identifier: null
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: langgenius/siliconflow:0.0.41@2111cf63326c7f67e79464301be33f9d36650e18551a65ba65e2cdadfe3f4773
+    version: null
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 10
+    strategy: react
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config:
+    prompt:
+    - role: system
+      text: ''
+  completion_prompt_config:
+    conversation_histories_role:
+      assistant_prefix: ''
+      user_prefix: ''
+    prompt:
+      text: ''
+  dataset_configs:
+    datasets:
+      datasets: []
+    retrieval_model: single
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .WEBM
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      frequency_penalty: 0
+      stop: []
+      temperature: 0.51
+      top_p: 1
+    mode: chat
+    name: Qwen/Qwen2.5-7B-Instruct
+    provider: langgenius/siliconflow/siliconflow
+  more_like_this:
+    enabled: false
+  opening_statement: null
+  pre_prompt: '提供多种代码语言转换能力，将用户输入的代码转换成他们需要的代码语言。请将以下代码片段转为{{Target_code}}: 当用户输入的信息是非代码片段时，提示：请正确输入代码片段。{{default_input}}'
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    canned_response: ''
+    enabled: false
+    words: ''
+  speech_to_text:
+    enabled: false
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: false
+    language: ''
+    voice: ''
+  user_input_form:
+  - select:
+      default: ''
+      label: 目标语言
+      options:
+      - Java
+      - JavaScript
+      - Swift
+      - Go
+      - Shell
+      - PHP
+      - Python
+      - C
+      - C#
+      - Objective-C
+      - Ruby
+      - R
+      required: true
+      variable: Target_code
+  - paragraph:
+      default: ''
+      label: 代码片段
+      required: true
+      variable: default_input
+version: 0.5.0
